@@ -1,0 +1,70 @@
+rm d.txt
+rmdir hakemisto
+
+git init
+git config --global user.name "Jouni Jokelainen"
+git config --global user.email "jouni.jokelainen@riveria.fi"
+git config --list
+git config --edit --global
+git config --help
+touch a.txt
+git status
+git add a.txt TAI git add .
+git commit -m "Luotu tyhjä tiedosto a.txt"
+git log TAI git log --oneline
+touch b.txt
+git status
+git add b.txt
+git commit --amend
+git log
+git show *commitin tunnisteen alku*
+echo "C" >> c.txt
+cat c.txt
+touch d.txt
+echo "d" >> d.txt
+git .
+git commit -m "Lisätty tiedosto c.txt ja d.txt"
+git log oneline
+echo "XXXXXX" > d.txt
+git diff
+git checkout d.txt
+git branch
+git branch uusibranch
+git checkout uusibranch
+touch e.txt
+git add .
+git commit -m "Lisätty tiedosto e.txt uudessa haarassa"
+git checkout master
+git merge uusibranch
+git branch -d uusibranch
+
+
+git revert *peruttavan commitin id*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
